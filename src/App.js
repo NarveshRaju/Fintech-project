@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import React, { useState } from 'react';
 import { ChevronRight, Target, Shield, TrendingUp, Menu, X, ArrowRight } from 'lucide-react';
 
@@ -22,8 +23,8 @@ export default function FinancialPortfolioLanding() {
               <a href="#features" className="text-gray-600 hover:text-purple-600 transition-colors">Features</a>
               <a href="#how-it-works" className="text-gray-600 hover:text-purple-600 transition-colors">How It Works</a>
               <a href="#about" className="text-gray-600 hover:text-purple-600 transition-colors">About</a>
-              <button className="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors">
-                Get Started
+              <button className="w-full mt-2 bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors">
+                <Link to="/login">Login/Signup</Link>
               </button>
             </div>
 
@@ -47,7 +48,7 @@ export default function FinancialPortfolioLanding() {
               <a href="#how-it-works" className="block px-3 py-2 text-gray-600 hover:text-purple-600">How It Works</a>
               <a href="#about" className="block px-3 py-2 text-gray-600 hover:text-purple-600">About</a>
               <button className="w-full mt-2 bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors">
-                Get Started
+                <Link to="/login">Login/Signup</Link>
               </button>
             </div>
           </div>
